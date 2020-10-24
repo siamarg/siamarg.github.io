@@ -87,36 +87,16 @@
             <p class="text-center wow fadeInDown">Fill this form with all the details, so that our team can support you with our products.</p>
         </div>
 
-        <form action="send-mail.php" id="contact-form">
+        <div id="contact-form">
+          <form method="post" action="https://forms.un-static.com/forms/3047ceff7317bad4af3622afb814233523668d0f">
           <input id="user-name"  type="text" tabindex="1" placeholder="Full Name" name="fullname" required>
-          <input id="user-email" type="text" tabindex="2" placeholder="Email Address" name="email" required>
           <input id="user-phone"  type="text" tabindex="3" placeholder="Phone Number" name="phone" required>
-          <input id="user-company" type="text" tabindex="4" placeholder="Company Name" name="company" required>
-          <div class="select-option" tabindex="4">
-            <select name="budget">
-              <option value="-">How many Units you want?</option>
-              <option value="Not Sure">Not Decided</option>
-              <option value="10">10</option>
-              <option value="50">50</option>
-              <option value="100">100</option>
-              <option value="More than 100">More than 100</option>
-            </select>
-          </div>
-          <div class="select-option right" tabindex="5">
-            <select name="Timeline">
-              <option value="-">Select Product</option>
-              <option value="Product 1">Product 1</option>
-              <option value="Product 2">Product 2</option>
-              <option value="Product 3">Product 3</option>
-              <option value="Product 4">Product 4</option>
-              <option value="Product 5">Product 5</option>
-              <option value="Product 6">Product 6</option>
-            </select>
-          </div>
+          <input id="user-email" type="text" tabindex="2" placeholder="Email Address" name="email" required>
           <textarea id="user-message" type="text" tabindex="3" placeholder="Further Detail(if any)" name="message" required onkeydown="textAreaAdjust(this)"></textarea>
           <p>Expect a reply within <strong>2 business days</strong></p>
           <input type="submit" value="Send Message">
         </form><!--end of newActivity form-->
+      </div>
     
     
     
