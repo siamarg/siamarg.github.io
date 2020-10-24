@@ -19,6 +19,7 @@
     <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>   
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    
 
   </head>
   <body>
@@ -92,9 +93,12 @@
           <input id="user-name"  type="text" tabindex="1" placeholder="Full Name" name="fullname" required>
           <input id="user-phone"  type="text" tabindex="3" placeholder="Phone Number" name="phone" required>
           <input id="user-email" type="text" tabindex="2" placeholder="Email Address" name="email" required>
-          <textarea id="user-message" type="text" tabindex="3" placeholder="Further Detail(if any)" name="message" required onkeydown="textAreaAdjust(this)"></textarea>
+          <textarea id="user-message" type="text" tabindex="3" placeholder="Your Message" name="message" required onkeydown="textAreaAdjust(this)"></textarea>
           <p>Expect a reply within <strong>2 business days</strong></p>
-          <input type="submit" value="Send Message">
+          <input class="g-recaptcha" 
+          data-sitekey="6Ld35NoZAAAAAA1C-dogQvLC-B4xuQde-prAmHd3" 
+          data-callback='onSubmit' 
+          data-action='submit' type="submit" value="Send Message">
         </form><!--end of newActivity form-->
       </div>
     
@@ -165,6 +169,13 @@
   <script type="text/javascript" src="assets/js/app.js"></script>
  
   <script src="assets/js/custom.js"></script> 
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 
   </body>
 </html>
+
+<script>
+  function onSubmit(token) {
+    document.getElementById("contact-form").submit();
+  }
+</script>
