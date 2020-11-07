@@ -51,6 +51,14 @@ jQuery(function($){
     }
   });
 
+  $('.mu-vidlink').magnificPopup({
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    gallery:{
+      enabled:true
+    }
+  });
+
   /* ----------------------------------------------------------- */
   /*  3. DATEPICKER
   /* ----------------------------------------------------------- */      
