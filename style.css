@@ -3492,3 +3492,17 @@ select:focus,input:focus,textarea:focus, div{outline:none}
   }
 }
 
+.responsive-map{
+  overflow: hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  }
+  
+.responsive-map iframe{
+  left:10%;
+  top:0;
+  height:80%;
+  width:80%;
+  position:absolute;
+}
